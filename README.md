@@ -219,3 +219,51 @@ class Person
     }
 }
 ```
+
+
+
+#### A simple example of OOP in C#
+```csharp
+using System;
+
+namespace OOP
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person person = new Person();
+            person.Name = "John";
+            person.Age = 30;
+            person.Greet();
+
+            Student student = new Student();
+            student.Name = "Mary";
+            student.Age = 20;
+            student.Grade = 10;
+            student.Greet();
+        }
+    }
+
+    class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+
+        public virtual void Greet()
+        {
+            Console.WriteLine("Hello");
+        }
+    }
+
+    class Student : Person
+    {
+        public int Grade { get; set; }
+
+        public override void Greet()
+        {
+            Console.WriteLine("Hello Student");
+        }
+    }
+}
+```

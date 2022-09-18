@@ -267,3 +267,65 @@ namespace OOP
     }
 }
 ```
+
+
+
+
+## Basics of C# Collections 
+
+#### List
+List is used to store a collection of objects.
+```csharp
+List<int> list = new List<int>();
+list.Add(1);
+list.Add(2);
+list.Add(3);
+list.Add(4);
+list.Add(5);
+```
+
+#### Dictionary
+Dictionary is used to store a collection of key/value pairs.
+```csharp
+Dictionary<string, string> dictionary = new Dictionary<string, string>();   
+dictionary.Add("1", "One");
+dictionary.Add("2", "Two");
+dictionary.Add("3", "Three");
+dictionary.Add("4", "Four");
+
+foreach (KeyValuePair<string, string> pair in dictionary)
+{
+    Console.WriteLine(pair.Key + " " + pair.Value);
+}
+```
+
+#### OOP with Collections
+```csharp
+using System;
+using System.Collections.Generic;
+
+namespace OOP
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Person> people = new List<Person>();
+            people.Add(new Person { Name = "John", Age = 30 });
+            people.Add(new Person { Name = "Mary", Age = 20 });
+            people.Add(new Person { Name = "Steve", Age = 50 });
+
+            foreach (Person person in people)
+            {
+                Console.WriteLine(person.Name + " " + person.Age);
+            }
+        }
+    }
+
+    class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
+}
+```

@@ -110,3 +110,112 @@ Person person = new Person();
 person.Name = "John";
 person.Age = 30;
 ```
+
+
+#### Inheritance
+Inheritance is used to form new classes using classes that have already been defined.
+```csharp
+class Student : Person
+{
+    public int Grade { get; set; }
+}
+```
+
+#### Polymorphism
+Polymorphism is used to perform a single action in different ways.
+```csharp
+class Person
+{
+    public virtual void Greet()
+    {
+        Console.WriteLine("Hello");
+    }
+}
+
+class Student : Person
+{
+    public override void Greet()
+    {
+        Console.WriteLine("Hello Student");
+    }
+}
+```
+
+#### Encapsulation
+Encapsulation is used to restrict access to methods and variables. This can prevent the accidental modification of data. To achieve this, you must declare variables of a class as private (cannot be accessed by an object outside the class) and provide public get and set methods to access and update the value of a private variable.
+```csharp
+class Person
+{
+    private string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+```
+
+#### Abstraction
+Abstraction is used to hide the internal details and show only the functionalities. In other words, it shows only essential things to the user and hides the internal details for example there is a remote you know only switch on and off but you don't know what internal mechanism is working in the remote.
+```csharp
+abstract class Shape
+{
+    public abstract void Draw();
+}
+```
+
+#### Interfaces
+Interfaces are used to achieve abstraction. They can contain only the declaration of methods, not the implementation. It is used to achieve abstraction and multiple inheritance in C#.
+```csharp
+interface IShape
+{
+    void Draw();
+}
+```
+
+#### Access Modifiers
+Access modifiers are used to set the accessibility of classes, methods, and variables.
+```csharp
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+```
+#### Static
+Static is used to create class members (fields, methods, properties, etc.) that belong to the class rather than the object of a class.
+```csharp
+class Person
+{
+    public static int Count { get; set; }
+}
+```
+
+#### Properties
+Properties are used to provide a flexible mechanism to read, write, or compute the value of a private field.
+```csharp
+class Person
+{
+    private string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+}
+```
+
+
+#### Indexers
+Indexers are used to create classes and structs that can be indexed just like arrays.
+```csharp
+class Person
+{
+    private string[] names = new string[10];
+    public string this[int index]
+    {
+        get { return names[index]; }
+        set { names[index] = value; }
+    }
+}
+```

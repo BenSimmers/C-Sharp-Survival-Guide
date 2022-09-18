@@ -1,5 +1,8 @@
 # C-Sharp-Survival-Guide
 
+This is a collection of notes and code snippets that have been made for myself to help me learn C# and .NET. I hope that it will be useful to others as well.
+Uses some of the content from QUT CAB201 Programming Principles in C#.
+
 
 # Basic C# Syntax
 #### Variables
@@ -329,3 +332,8 @@ namespace OOP
     }
 }
 ```
+
+
+# Other Stuff
+### .NET Framework
+### REST API

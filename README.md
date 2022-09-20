@@ -3,7 +3,10 @@
 This is a collection of notes and code snippets that have been made for myself to help me learn C# and .NET. I hope that it will be useful to others as well.
 Uses some of the content from QUT CAB201 Programming Principles in C#.
 
+Feel free to make Pull Request if you see that anything needs to be added.
 
+Contributors:
+<a href="#">irls-svg</a>
 # Basic C# Syntax
 #### Variables
 What are variables? Variables are containers for storing data values. In C#, there are different types of variables, for example a string variable, which can contain a text value:
@@ -86,7 +89,7 @@ switch (a)
         break;
 }
 ```
-#### Functions
+#### Functions/Methods
 Functions are used to perform certain actions, and they are also called methods.
 ```csharp
 static int Add(int a, int b)
@@ -94,6 +97,9 @@ static int Add(int a, int b)
     return a + b;
 }
 ```
+
+#### Uses of `Readline();`
+`Readline()` is a powerful tool in C#, it allows the program to read an input from a user, furthermore it can also help when converting variables of different types. e.g.  String to Int or float to int.
 
 ## Basics of Object Oriented Programming in C#
 
@@ -199,8 +205,12 @@ Properties are used to provide a flexible mechanism to read, write, or compute t
 ```csharp
 class Person
 {
+    //the original variable called `name`
     private string name;
-    public string Name
+    public string Name 
+    /**creating a property called Name which will  use the
+    `name` variable to compute, change or read.
+    */
     {
         get { return name; }
         set { name = value; }
@@ -235,10 +245,10 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Person person = new Person();
-            person.Name = "John";
-            person.Age = 30;
-            person.Greet();
+            Person person = new Person(); //object instance of a class
+            person.Name = "John"; //object.variable name
+            person.Age = 30;//object.variable name
+            person.Greet();//object. name
 
             Student student = new Student();
             student.Name = "Mary";

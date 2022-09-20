@@ -1,12 +1,13 @@
 # C-Sharp-Survival-Guide
 
-This is a collection of notes and code snippets that have been made for myself to help me learn C# and .NET. I hope that it will be useful to others as well.
+This is a collection of notes and code snippets that have been made for myself to help me re-learn C# and begin learning ASP.NET and hopefully other C# based methodologies and frameworks. I hope that it will be useful to others as well.
 Uses some of the content from QUT CAB201 Programming Principles in C#.
+*Feel free to make Pull Request if you see that anything needs to be added.* 
 
-Feel free to make Pull Request if you see that anything needs to be added.
 
-Contributors:
-<a href="#">irls-svg</a>
+#### Contributors:
+<a href="https://github/irls-svg">irls-svg</a>
+
 # Basic C# Syntax
 #### Variables
 What are variables? Variables are containers for storing data values. In C#, there are different types of variables, for example a string variable, which can contain a text value:
@@ -345,5 +346,5 @@ namespace OOP
 
 
 # Other Stuff
-### .NET Framework
+### ASP.NET
 ### REST API

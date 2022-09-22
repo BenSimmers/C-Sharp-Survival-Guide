@@ -347,4 +347,89 @@ namespace OOP
 
 # Other Stuff
 ### ASP.NET
+<!-- what are the basics of asp.net -->
+### MVC
+<!-- what are the basics of MVC -->
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace MVC.Controllers
+{
+    public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            return View();
+        }
+    }
+}
+```
+
+### Entity Framework
+<!-- what are the basics of Entity Framework -->
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace MVC.Controllers
+{
+    public class HomeController : Controller
+    {
+        // GET: Home
+        public ActionResult Index()
+        {
+            return View();
+        }
+    }
+}
+```
+
+### LINQ
+<!-- what are the basics of LINQ -->
+### WPF
+<!-- what are the basics of WPF -->
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace WPF
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+    }
+}
+```
+### WCF<!-- what are the basics of WCF -->
+
+# Resources
+
+
+
 ### REST API

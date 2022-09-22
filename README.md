@@ -6,7 +6,7 @@ Uses some of the content from QUT CAB201 Programming Principles in C#.
 
 
 #### Contributors:
-<a href="https://github/irls-svg">irls-svg</a>
+[irls-svg](https://github.com/irls-svg)
 
 # Basic C# Syntax
 #### Variables

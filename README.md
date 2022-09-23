@@ -37,8 +37,59 @@ float b = 1.5f;
 //bool is also available
 bool a = true;
 bool b = false;
+```
+
+**Differences between char and string**
+```csharp
+char a = 'a';
+string b = "a";
+```
+The difference between char and string is that char is a single character and string is a sequence of characters. The char data type is used to store a single character. The string data type is used to store a sequence of characters (text). A string variable can contain a maximum of 2 billion characters.
+
+**Differences between int, float, double, long**
+* int is a 32-bit signed integer
+* long is a 64-bit signed integer
+* float is a single-precision 32-bit floating point number
+* double is a double-precision 64-bit floating point number
+
+**when to use int, float, double, long**
+* int is used for whole numbers
+* long is used for whole numbers that are larger than int
+* float is used for decimal numbers
+* double is used for decimal numbers that are larger than float
+
+**difference between signed and unsigned variables**
+* signed variables can be positive or negative
+* unsigned variables can only be positive
+
+
+
+
+#### Operators
+Operators are used to perform operations on variables and values. These are known as simple operators. There are also assignment operators, which are used to assign values to variables. The following lists the most common operators in C#:
+```csharp
+int a = 1;
+int b = 2;
+int c = a + b;
+int d = a - b;
+int e = a * b;
+int f = a / b;
+int g = a % b;
+
+// +=, -=, *=, /=, %= are also available
+int a = 1;
+int b = 2;
+int c = a + b;
+c += a; // c = c + a;
+c -= a; // c = c - a;
+c *= a; // c = c * a;
+c /= a; // c = c / a;
+c %= a; // c = c % a;
 
 ```
+
+
+
 
 #### Arrays
 Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
@@ -101,6 +152,8 @@ static int Add(int a, int b)
 
 #### Uses of `Readline();`
 `Readline()` is a powerful tool in C#, it allows the program to read an input from a user, furthermore it can also help when converting variables of different types. e.g.  String to Int or float to int.
+
+
 
 ## Basics of Object Oriented Programming in C#
 
@@ -289,6 +342,10 @@ namespace OOP
 
 #### List
 List is used to store a collection of objects.
+
+what are lists used for?
+Lists are used to store a collection of objects. They are very similar to arrays, but they are more flexible because the size of a list can be changed after it is created. Lists are also known as generic lists because they can store a list of objects of a specific type.
+
 ```csharp
 List<int> list = new List<int>();
 list.Add(1);
@@ -300,6 +357,13 @@ list.Add(5);
 
 #### Dictionary
 Dictionary is used to store a collection of key/value pairs.
+
+What are dictionaries used for?
+Dictionaries are used to store data values in key/value pairs. A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+
+Why are dictionaries used?
+Dictionaries are used when we want to quickly retrieve the data without any specific order. Dictionaries are optimized to retrieve values when the key is known.
+
 ```csharp
 Dictionary<string, string> dictionary = new Dictionary<string, string>();   
 dictionary.Add("1", "One");
@@ -347,89 +411,19 @@ namespace OOP
 
 # Other Stuff
 ### ASP.NET
-<!-- what are the basics of asp.net -->
-### MVC
-<!-- what are the basics of MVC -->
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+ASP.NET is a web application framework developed and marketed by Microsoft to allow programmers to build dynamic web sites, web applications and web services. It was first released in January 2002 with version 1.0 of the .NET Framework, and is the successor to Microsoft's Active Server Pages (ASP) technology.
 
-namespace MVC.Controllers
-{
-    public class HomeController : Controller
-    {
-        // GET: Home
-        public ActionResult Index()
-        {
-            return View();
-        }
-    }
-}
-```
+### ASP.NET Core
+ASP.NET Core is the next generation of ASP.NET. It is a modular framework that runs on both the full .NET Framework, on Windows, and the cross-platform .NET Core.
 
-### Entity Framework
-<!-- what are the basics of Entity Framework -->
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+### ASP.NET MVC
+ASP.NET MVC is a web application framework developed by Microsoft, which implements the model–view–controller (MVC) pattern. It is open-source software, apart from the ASP.NET Web Forms component which is proprietary.
 
-namespace MVC.Controllers
-{
-    public class HomeController : Controller
-    {
-        // GET: Home
-        public ActionResult Index()
-        {
-            return View();
-        }
-    }
-}
-```
-
-### LINQ
-<!-- what are the basics of LINQ -->
-### WPF
-<!-- what are the basics of WPF -->
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-namespace WPF
-{
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-    }
-}
-```
-### WCF<!-- what are the basics of WCF -->
-
-# Resources
-
+### ASP.NET Web API
+ASP.NET Web API is a framework that makes it easy to build HTTP services that reach a broad range of clients, including browsers and mobile devices. ASP.NET Web API is an ideal platform for building RESTful applications on the .NET Framework.
 
 
 ### REST API
+REST (REpresentational State Transfer) is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. REST-compliant systems, often called RESTful systems, are characterized by how they are stateless and separate the concerns of client and server.
+
+
